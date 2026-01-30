@@ -1,7 +1,7 @@
 FROM wordpress:6.9.0-php8.5-fpm-alpine AS wp
 
 # install redis extension
-ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/download/2.9.7/install-php-extensions /usr/local/bin/
+ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/download/2.9.29/install-php-extensions /usr/local/bin/
 RUN install-php-extensions redis
 RUN rm /usr/local/bin/install-php-extensions
 
