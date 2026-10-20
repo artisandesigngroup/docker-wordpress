@@ -1,4 +1,4 @@
-FROM wordpress:7.0.2-php8.5-fpm-alpine AS wp
+FROM wordpress:7.1.3-php8.5-fpm-alpine AS wp
 
 # install redis extension
 ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/download/2.11.12/install-php-extensions /usr/local/bin/
